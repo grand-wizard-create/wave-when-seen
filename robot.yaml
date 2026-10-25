@@ -1,0 +1,10 @@
+rate_hz: 30
+robot:
+  type: hf_so101_follower
+  isolate: true
+  kwargs: {use_default_calibration: true}
+devices:
+  - name: camera
+    type: camera
+    required: true
+    kwargs: {device_index: 0}
